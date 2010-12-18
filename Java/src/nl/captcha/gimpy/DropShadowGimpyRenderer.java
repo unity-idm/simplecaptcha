@@ -27,7 +27,6 @@ public class DropShadowGimpyRenderer implements GimpyRenderer {
 		_opacity = opacity;
 	}
 
-	@Override
     public void gimp(BufferedImage image) {
         ShadowFilter sFilter = new ShadowFilter();
         sFilter.setRadius(_radius);

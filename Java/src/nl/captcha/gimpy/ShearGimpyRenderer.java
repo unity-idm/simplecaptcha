@@ -19,7 +19,6 @@ public class ShearGimpyRenderer implements GimpyRenderer {
         _color = color;
     }
 
-    @Override
     public void gimp(BufferedImage bi) {
         Graphics2D g = bi.createGraphics();
         shearX(g, bi.getWidth(), bi.getHeight());

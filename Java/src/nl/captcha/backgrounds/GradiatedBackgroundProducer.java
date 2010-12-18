@@ -29,7 +29,6 @@ public class GradiatedBackgroundProducer implements BackgroundProducer {
         _toColor = to;
     }
     
-    @Override
     public BufferedImage getBackground(int width, int height) {
         // create an opaque image
         BufferedImage img = new BufferedImage(width, height,
@@ -57,7 +56,6 @@ public class GradiatedBackgroundProducer implements BackgroundProducer {
         return img;
     }
 
-    @Override
     public BufferedImage addBackground(BufferedImage image) {
         int width = image.getWidth();
         int height = image.getHeight();

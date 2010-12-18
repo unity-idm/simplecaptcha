@@ -48,7 +48,6 @@ public class DefaultWordRenderer implements WordRenderer {
      * @param word The word to be rendered.
      * @param bi  The BufferedImage onto which the word will be painted on to
      */
-    @Override
     public void render(final String word, BufferedImage image) {
         Graphics2D g = image.createGraphics();
 

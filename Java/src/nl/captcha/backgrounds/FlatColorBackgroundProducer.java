@@ -17,14 +17,12 @@ public final class FlatColorBackgroundProducer implements BackgroundProducer {
         _color = color;
     }
 
-    @Override
     public BufferedImage addBackground(BufferedImage bi) {
         int width = bi.getWidth();
         int height = bi.getHeight();
         return this.getBackground(width, height);
     }
 
-    @Override
     public BufferedImage getBackground(int width, int height) {
         BufferedImage img = new BufferedImage(width, height,
                 BufferedImage.TYPE_INT_RGB);

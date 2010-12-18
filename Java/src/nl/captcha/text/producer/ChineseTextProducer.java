@@ -32,7 +32,6 @@ public class ChineseTextProducer implements TextProducer {
     	_txtProd = new DefaultTextProducer(length, CHARS);
     }
 
-    @Override
     public String getText() {
     	return _txtProd.getText();
     }

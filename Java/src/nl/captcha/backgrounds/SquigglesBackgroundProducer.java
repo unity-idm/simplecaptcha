@@ -8,14 +8,12 @@ import java.awt.image.BufferedImage;
 
 public class SquigglesBackgroundProducer implements BackgroundProducer {
 
-	@Override
     public BufferedImage addBackground(BufferedImage image) {
         int width = image.getWidth();
         int height = image.getHeight();
         return getBackground(width, height);
     }
     
-    @Override
     public BufferedImage getBackground(int width, int height) {
         BufferedImage result = new BufferedImage(width, height,
                 BufferedImage.TYPE_INT_RGB);

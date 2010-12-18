@@ -17,7 +17,6 @@ public class RippleGimpyRenderer implements GimpyRenderer {
      * 
      * @param image The image to be distorted
      */
-	@Override
     public void gimp(BufferedImage image) {
         RippleFilter filter = new RippleFilter();
         filter.setWaveType(RippleFilter.SINGLEFRAME);

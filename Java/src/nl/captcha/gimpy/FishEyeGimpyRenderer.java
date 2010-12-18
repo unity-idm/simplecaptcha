@@ -23,7 +23,6 @@ public class FishEyeGimpyRenderer implements GimpyRenderer {
 		_vColor = vColor;
 	}
 
-	@Override
     public void gimp(BufferedImage image) {
         int height = image.getHeight();
         int width = image.getWidth();

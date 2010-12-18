@@ -52,7 +52,6 @@ public class ColoredEdgesWordRenderer implements WordRenderer {
 		_strokeWidth = strokeWidth < 0 ? DEFAULT_STROKE_WIDTH : strokeWidth;
 	}
 
-	@Override
 	public void render(final String word, BufferedImage image) {
 		Graphics2D g = image.createGraphics();
 		

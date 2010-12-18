@@ -33,7 +33,6 @@ public class CurvedLineNoiseProducer implements NoiseProducer {
         _width = width;
     }
 
-    @Override
     public void makeNoise(BufferedImage image) {
         int width = image.getWidth();
         int height = image.getHeight();

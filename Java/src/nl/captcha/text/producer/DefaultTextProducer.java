@@ -29,7 +29,6 @@ public class DefaultTextProducer implements TextProducer {
     	_srcChars = copyOf(srcChars, srcChars.length);
     }
     
-    @Override
     public String getText() {
         String capText = "";
         for (int i = 0; i < _length; i++) {

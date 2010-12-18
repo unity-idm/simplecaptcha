@@ -32,7 +32,6 @@ public class StretchGimpyRenderer implements GimpyRenderer {
 		_yScale = yScale;
 	}
 	
-	@Override
 	public void gimp(BufferedImage image) {
 		Graphics2D g = image.createGraphics();
 		AffineTransform at = new AffineTransform();

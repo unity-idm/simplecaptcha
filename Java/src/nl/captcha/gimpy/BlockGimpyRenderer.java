@@ -18,7 +18,6 @@ public class BlockGimpyRenderer implements GimpyRenderer {
 		_blockSize = blockSize;
 	}
 	
-	@Override
 	public void gimp(BufferedImage image) {
 		BlockFilter filter = new BlockFilter();
 		filter.setBlockSize(_blockSize);

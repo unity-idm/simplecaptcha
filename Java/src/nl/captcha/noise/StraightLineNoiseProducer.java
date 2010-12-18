@@ -30,7 +30,6 @@ public class StraightLineNoiseProducer implements NoiseProducer {
         _thickness = thickness;
     }
 
-    @Override
     public void makeNoise(BufferedImage image) {
         Graphics2D graphics = image.createGraphics();
         int height = image.getHeight();

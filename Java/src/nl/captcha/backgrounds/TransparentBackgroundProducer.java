@@ -12,12 +12,10 @@ import java.awt.image.BufferedImage;
  */
 public class TransparentBackgroundProducer implements BackgroundProducer {
 
-	@Override
 	public BufferedImage addBackground(BufferedImage image) {
 		return getBackground(image.getWidth(), image.getHeight());
 	}
 
-	@Override
 	public BufferedImage getBackground(int width, int height) {
 		BufferedImage bg = new BufferedImage(width, height, BufferedImage.TRANSLUCENT);
 		Graphics2D g = bg.createGraphics();
