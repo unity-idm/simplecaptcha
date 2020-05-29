@@ -33,6 +33,8 @@
 	<developers>
 		<developer>
 			<name>James Childers</name>
+			<organization>?</organization>
+			<organizationUrl>https://sourceforge.net/projects/simplecaptcha/</organizationUrl>
 		</developer>
 		<developer>
 			<name>Krzysztof Benedyczak</name>
