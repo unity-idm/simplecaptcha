@@ -1,12 +1,12 @@
-SimpleCaptcha - A Java library for creating CAPTCHAs for J2EE applications,
-including Spring MVC, Struts, and Grails.
+SimpleCaptcha - A Java library for creating CAPTCHAs based on simplecaptcha available at SourceForge: 
 
-Example implementations are located in the examples/ directory. The more robust
-examples were done using Grails; this is the recommended starting point for
-learning how to implement and use SimpleCaptcha.
+http://simplecaptcha.sourceforge.net
 
-To build, simply run ant from this directory. The only requirement is that the 
-$CATALINA_HOME environment variable be set:
+https://sourceforge.net/projects/simplecaptcha/
 
-    # set $CATALINA_HOME=/usr/apache-tomcat-6.0.18/
-    # ant
+by James Childers. 
+
+In this fork the following modifications are made:
+* project was mavenized
+* code was rewritten to use newer jhlabs filters library, which is available on maven central
+* JEE/servlets integration was dropped
