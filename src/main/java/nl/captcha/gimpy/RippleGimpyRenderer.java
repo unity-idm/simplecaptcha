@@ -20,13 +20,13 @@ public class RippleGimpyRenderer implements GimpyRenderer {
 	@Override
     public void gimp(BufferedImage image) {
         RippleFilter filter = new RippleFilter();
-        filter.setWaveType(RippleFilter.SINGLEFRAME);
+        filter.setWaveType(RippleFilter.TRIANGLE);
         filter.setXAmplitude(2.6f);
         filter.setYAmplitude(1.7f);
         filter.setXWavelength(15);
         filter.setYWavelength(5);
         
-        filter.setEdgeAction(TransformFilter.RANDOMPIXELORDER);
+        filter.setEdgeAction(TransformFilter.CLAMP);
 
         applyFilter(image, filter);
     }
